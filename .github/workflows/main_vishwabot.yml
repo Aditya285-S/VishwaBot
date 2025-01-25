@@ -64,14 +64,14 @@ jobs:
 
       
       - name: Login to Azure
-        uses: azure/login@v2
+        uses: azure/login@v1
         with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E8472E97D99E4B5C9CE4A58A67DBBB24 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3763D9FB4086457C8E5253497DFCFEF9 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_1B3922A2758B4444A9E7CCAC59B52223 }}
 
       - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v3
+        uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
           app-name: 'VishwaBot'
