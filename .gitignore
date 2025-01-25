@@ -1,0 +1,5 @@
+Data/
+.vscode/
+__pycache__/
+.deployment
+.env
