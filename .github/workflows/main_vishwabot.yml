@@ -75,4 +75,6 @@ jobs:
         with:
           app-name: 'VishwaBot'
           slot-name: 'Production'
+          package: release.zip
+          runtime-stack: 'PYTHON|3.11'
           
